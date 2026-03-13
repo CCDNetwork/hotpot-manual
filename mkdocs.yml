@@ -9,3 +9,9 @@ theme:
     - search.highlight
     - navigation.tabs
     - toc.integrate
+nav:
+  - Home: index.md
+  - Dashboard: dashboard.md
+  - Bookings: bookings.md
+  - Deduplication: deduplication.md
+  - Referrals: referrals.md
