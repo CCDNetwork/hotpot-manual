@@ -2,7 +2,7 @@
 
 The Deduplication section of the menu on the left gives you three options:
 
-![Deduplication menu options screenshot](images/image19.png "Deduplication menu")
+![Deduplication menu options screenshot](images/image38.png "Deduplication menu")
 
 * [Deduplication](deduplication.md#deduplication). This menu option will take you to a page where you upload your data and check for potential duplicates.
 * [Manage Duplicates](deduplication.md#manage-duplicates). This menu option will take you to a page where you check and confirm potential duplicates.
@@ -14,11 +14,11 @@ Before you start to use these options, your organisation will need to establish 
 
 On this page you can see who has uploaded data, the name of the file that they have uploaded, the number of duplicates in those files, and when the deduplication records were created and updated.
 
-![Deduplication uploads screen screenshot](images/image20.png "Deduplication uploads")
+![Deduplication uploads screen screenshot](images/image44.png "Deduplication uploads")
 
 In the top right corner, you see a blue button which activates the Deduplication Wizard. Click on this button and the Wizard will guide you through the deduplication process.
 
-![Deduplication wizard button screenshot](images/image21.png "Deduplication wizard button")
+![Deduplication wizard button screenshot](images/image41.png "Deduplication wizard button")
 
 ### The Deduplication Wizard
 
@@ -38,7 +38,7 @@ If you do not select a Template, you will see a message to tell you that a Templ
 
 If you do not see your Template in the dropdown menu, you can either contact your organisation administrator and ask them to create one, or [create a Template yourself](deduplication.md#manage-templates).
 
-![Template selection screenshot](images/image22.png "Template selection")
+![Template selection screenshot](images/image29.png "Template selection")
 
 Once you have selected a Template, you can choose a file to deduplicate. When you press the button “Choose a file”, you will see the usual upload prompt which your device uses.
 
@@ -46,7 +46,7 @@ Choose a file from your device or from cloud storage. If you select the wrong fi
 
 Once you have selected the relevant Template and the correct File, press “Continue” to go to the next stage of the deduplication process.
 
-![File selection screenshot](images/image23.png "File selection")
+![File selection screenshot](images/image32.png "File selection")
 
 #### Step 2: Internal File Deduplication
 
@@ -56,13 +56,13 @@ If there are any duplicate records in your uploaded file, it will tell you how m
 
 If you press the Download button, this file will be downloaded to your device or cloud storage. You can then open the file to check and edit the duplicates on your device.
 
-![Internal duplicate screenshot](images/image24.png "Internal duplicates")
+![Internal duplicate screenshot](images/image54.png "Internal duplicates")
 
 Once you have edited the duplicates on your device, you should return to Step 1 of the Wizard and upload the corrected file.
 
 When you upload a file which contains no duplicate records, you will see a message which confirms that the platform has found no duplicate records in the file.
 
-![No internal duplicate screenshot](images/image25.png "No internal duplicates")
+![No internal duplicate screenshot](images/image57.png "No internal duplicates")
 
 The Wizard will confirm that you have uploaded a file with no duplicates in it, and you can press the “Continue” button to continue to the next step.
 
@@ -72,11 +72,11 @@ The Wizard will add your beneficiary data to the shared Registry, and check to s
 
 If your file did not contain any duplicates, you will see the following screen. You can click the “Finish” button to close the Wizard, and you do not need to take any further action.
 
-![Finish wizard screenshot](images/image26.png "Finish Wizard")
+![Finish wizard screenshot](images/image24.png "Finish Wizard")
 
 If your file contained duplicates, you will see the following screen. You can click the “Finish” button to close the Wizard, and then visit the “[Manage Duplicates](deduplication.md#manage-duplicates)” page to view and manage the potential duplicates.
 
-![Duplicates found wizard screenshot](images/image27.png "Duplicates found in registry")
+![Duplicates found wizard screenshot](images/image8.png "Duplicates found in registry")
 
 ## Manage Duplicates
 
@@ -84,14 +84,14 @@ On this page you can view and manage potential duplicates which you have uploade
 
 The Unresolved tab will show you potential duplicates which you need to check. In order to ensure data minimization, the Registry only holds the data fields which the Data Steward has decided are necessary to check for duplicates, e.g. the data defined by specific Rules.
 
-![Manage duplicates unresolved screenshot](images/image28.png "Manage duplicates unresolved list")
+![Manage duplicates unresolved screenshot](images/image12.png "Manage duplicates unresolved list")
 
 If you click on any row, the platform will take you to Beneficiary Preview, which shows you the details of the potential duplicate. At the top of the page you will see new information:
 
 * The status of the duplicate (either unavailable, accepted, or rejected)
 * The organisation which holds the primary record (i.e. the potential duplicate)
 
-![Beneficiary preview screenshot](images/image29.png "Beneficiary Preview")
+![Beneficiary preview screenshot](images/image31.png "Beneficiary Preview")
 
 Under the primary record, the platform shows you the organisation which holds that record, the staff member who uploaded that record, when they uploaded it, and which fields are potential duplicates.
 
@@ -99,7 +99,7 @@ You can use this information to contact your colleague in the other organisation
 
 Once the Adjudication Process is complete, you can change the status of the potential duplicate. In the top right corner of the Beneficiary Preview page, you will see a drop-down list entitled “Actions”.
 
-![Duplicate actions dropdown screenshot](images/image30.png "Actions dropdown")
+![Duplicate actions dropdown screenshot](images/image55.png "Actions dropdown")
 
 If the Adjudication Process is successful, and your reach agreement with your colleague, you can select one of these options.
 
@@ -109,7 +109,7 @@ If the Adjudication Process is successful, and your reach agreement with your co
 
 If you change the status of the record to “Accepted Duplicate” or “Rejected Duplicate”, the platform will move it from the “Unresolved” tab to the “Resolved” tab. You will be able to view this record when you switch views to that tab.
 
-![Resolved duplicates tab screenshot](images/image31.png "Resolved duplicates tab")
+![Resolved duplicates tab screenshot](images/image16.png "Resolved duplicates tab")
 
 ### The Adjudication Process
 
@@ -129,7 +129,7 @@ The Adjudication Process happens off-platform, and it usually requires discussio
 
 If you click on “Manage Templates”, the platform will take you to the Templates Page.
 
-![Manage templates page screenshot](images/image32.png "Manage Templates Page")
+![Manage templates page screenshot](images/image30.png "Manage Templates Page")
 
 Most deduplication platforms require you to upload your data in a specific format. This means that you have to spend time setting up your internal systems to output that format, or manually updating your spreadsheets to fit that format.
 
@@ -137,7 +137,7 @@ Templates enable the platform to “translate” your spreadsheet into a common 
 
 Each organisation can set up its own template, and it’s possible to set up multiple templates if you need to upload data from different sources. If you click on the “Create Template” button in the top right, you will see the “Create new template” box.
 
-![Create new template screenshot](images/image33.png "Create New Template")
+![Create new template screenshot](images/image28.png "Create New Template")
 
 Choose a simple descriptive name for your template. You should then check the labels on the left, and then enter into the “Column name” boxes on the right the labels that your organisation’s spreadsheet uses as column **headers**. For example:
 
@@ -151,8 +151,8 @@ If you are not sure which labels are being used for deduplication, you should as
 
 Once you have finished entering the Column names, click on the “Create template” button. 
 
-![Map template labels screenshot](images/image34.png "Map Template Labels")
+![Map template labels screenshot](images/image13.png "Map Template Labels")
 
 Clicking on the name of any Template in the list will take you to the “Template Edit/Preview” page. On this page you can view the Template details, update the mapping and change the name of the Template if you need to.
 
-![Template edit page screenshot](images/image35.png "Template Edit/Preview")
+![Template edit page screenshot](images/image2.png "Template Edit/Preview")
