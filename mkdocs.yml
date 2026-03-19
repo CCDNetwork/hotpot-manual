@@ -4,6 +4,9 @@ theme:
   palette:
     primary: teal
     accent: slate
+  font:
+    text: Ubuntu Sans
+    code: Ubuntu Sans Mono
   features:
     - search.suggest
     - search.highlight
