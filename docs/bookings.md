@@ -1,8 +1,28 @@
+
+
+
+
+![Referrals Analytics](images/image7.png)
+
+
+
+![Screenshot](images/image7.png)
+
 # How to manage Bookings
 
 The Booking section of the menu on the left gives you two options:
 
-![Booking menu options screenshot](images/image8.png "Booking menu")
+![Screenshot](images/image-8.png)
+
+
+
+![Screenshot](images/image8.png)
+
+
+
+![Booking Menu Options](images/image8.png)
+
+
 
 * [Make Bookings](bookings.md#make-bookings). This menu option will take you to a page where you upload your booking sheet and check if any households are already in the registry.
 * [View Bookings](bookings.md#view-bookings). This menu option will take you to a page where you can view all of the previous households which you have booked.
@@ -11,19 +31,55 @@ The Booking section of the menu on the left gives you two options:
 
 On this page you can download the Booking Template and activate the Booking Wizard to guide you through the booking process.
 
-![Make bookings page screenshot](images/image9.png "Make Bookings")
+![Screenshot](images/image-9.png)
+
+
+
+![Screenshot](images/image9.png)
+
+
+
+![Make Bookings Page](images/image9.png)
 
 You need to upload your booking list in a template agreed by the Cash Working Group. You can download a copy by clicking on the “Download template” button in the top right corner.
 
-![Download template button screenshot](images/image10.png "Download template")
+![Screenshot](images/image-10.png)
+
+
+
+![Screenshot](images/image10.png)
+
+
+
+![Download Template Button](images/image10.png)
 
 Once your booking list is in the format provided by the template, you can click on the “Booking Wizard” button to start.
 
-![Booking Wizard button screenshot](images/image11.png "Booking Wizard button")
+![Screenshot](images/image-11.png)
+
+
+
+![Screenshot](images/image11.png)
+
+
+
+![Booking Wizard Button](images/image11.png)
+
+
 
 When you click on the button “Booking Wizard”, the following pop-up box will appear.
 
-![Booking Wizard popup screenshot](images/image12.png "Booking Wizard popup")
+![Screenshot](images/image-12.png)
+
+
+
+![Screenshot](images/image12.png)
+
+
+
+![Booking Wizard Popup](images/image12.png)
+
+
 
 ### The Booking Wizard
 
@@ -37,23 +93,47 @@ Choose a file from your device or from cloud storage. If you select the wrong fi
 
 Once you have selected the correct File, press “Continue” to go to the next stage of the deduplication process.
 
+![Screenshot](images/image-23.png)
+
+
+
 #### Step 2: File Checking
 
 The Wizard will check if your uploaded file uses the correct template, if your data is incorrectly formatted, and if there are duplicates within the file.
 
 If you have not used the correct template or your data is incorrectly formatted, you will see the following error message.
 
-![File check error screenshot](images/image13.png "File check error")
+![Screenshot](images/image49.png)
+
+
+
+![Screenshot](images/image49.png)
 
 The Wizard will ask you to download the file in Excel format, correct any errors, and then upload the file again.
 
 The Excel file will look exactly the same as your original file, except any errors will be highlighted in red. A new column is added to give you additional information about the error.
 
-![Excel file error screenshot](images/image14.png "Excel error highlighting")
+![Screenshot](images/image20.png)
+
+
+
+![Screenshot](images/image20.png)
+
+
+
+![Screenshot](images/image20.png)
 
 If your uploaded file is in the correct template, your data is correctly formatted, and there are no duplicates, the Wizard will accept the file. You should click on the “Continue” button.
 
-![File accepted screenshot](images/image15.png "File accepted")
+![Screenshot](images/image42.png)
+
+
+
+![Screenshot](images/image42.png)
+
+
+
+![Screenshot](images/image42.png)
 
 #### Step 3: Registry Check
 
@@ -69,7 +149,15 @@ A new column is also added on the right which tells you which organisation has b
 
 This will enable CWG members to identify when there is duplication of registration, and avoid duplication of assistance.
 
-![Registry duplicate screenshot](images/image16.png "Registry duplicates")
+![Screenshot](images/image33.png)
+
+
+
+![Screenshot](images/image33.png)
+
+
+
+![Screenshot](images/image33.png)
 
 When you receive this information, you should update your organisation’s internal records to reflect changes to your final list.
 
@@ -79,8 +167,27 @@ On this page you can view the bookings which your organisation has made. You can
 
 You can see the National ID number of the Head of Household and Spouse, and details about duration of the assistance which you are providing them.
 
-![View bookings list screenshot](images/image17.png "View bookings list")
+![Screenshot](images/image46.png)
+
+
+
+![Screenshot](images/image46.png)
+
+
+
+![Screenshot](images/image46.png)
 
 You can search for specific households or bookings using the search function. You can search by ID number, by activity, by start and end dates, and by date of booking.
 
-![Booking search screenshot](images/image18.png "Booking search")
+![Screenshot](images/image-18.png)
+
+
+
+![Screenshot](images/image17.png)
+
+
+
+![Booking Search](images/image18.png)
+
+
+

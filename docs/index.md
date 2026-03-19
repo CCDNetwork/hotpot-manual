@@ -16,4 +16,4 @@ Your account will be created by an administrator in your organisation. The admin
 
 If you do not know which email and password to use, contact the administrator for your organisation.
 
-![Screenshot](images/image-1.png)
+![Screenshot](images/image52.png)
