@@ -1,11 +1,30 @@
 # How to manage Bookings
 
-The Booking section of the menu on the left gives you two options:
+The Booking section of the menu on the left gives you three options:
 
 ![Booking menu options screenshot](images/image17.png "Booking menu")
 
+* [Pre-booking Check](bookings.md#pre-booking-check). This menu option will take you to a page where you can check if your households are already in the registry before you finalise your booking list.
 * [Make Bookings](bookings.md#make-bookings). This menu option will take you to a page where you upload your booking sheet and check if any households are already in the registry.
 * [View Bookings](bookings.md#view-bookings). This menu option will take you to a page where you can view all of the previous households which you have booked.
+
+Note: The Pre-booking Check and the Booking Wizard are identical *except* the Booking Wizard allows you to make a booking at the end of the process. If you are still preparing your final booking list, you should run the Pre-booking Check. If you have already finalised your booking list, you should run the Booking Wizard.
+
+## Pre-booking Check
+
+On this page you can download the Booking Template and activate the Pre-booking Wizard to check if your households are available.
+
+You need to upload your pre-booking beneficiary list in a template agreed by the Cash Working Group. You can download a copy by clicking on the “Download template” button in the top right corner.
+
+![Download template button screenshot](images/image37.png "Download template")
+
+Once your pre-booking list is in the format provided by the template, you can click on the “Run Pre-Booking Wizard” button to start.
+
+[INSERT IMAGE]
+
+When you click on the button “Run Pre-Booking Wizard”, the following pop-up box will appear.
+
+[INSERT IMAGE]
 
 ## Make Bookings
 
