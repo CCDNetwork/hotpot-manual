@@ -58,6 +58,18 @@ The Excel file will look exactly the same as your original file, except any erro
 
 If your uploaded file is in the correct template, your data is correctly formatted, and there are no duplicates, the Wizard will accept the file. You should click on the “Continue” button.
 
+### Potential Errors
+
+There are a number of potential errors which your spreadsheet might contain:
+
+* First check that you are using the right template, and that all the headers are correct.
+* Incorrect ID format. Check that your ID numbers have the correct number of digits.
+* Invalid modality. Check that you have entered the modality correctly, including checking your spelling.
+* Invalid amount. Check that you have entered the correct amount according to CWG policy.
+* Currency. Check that you have entered the correct currency.
+* Start Date / End Date
+* Rounds
+
 ![Pre-Booking File accepted screenshot](images/image62.png "Pre-Booking File accepted")
 
 #### Step 3: Registry Check
@@ -79,6 +91,8 @@ When you receive this information, you should update your organisation’s inter
 If all of the households on your list are available for booking, the Wizard will ask you to run the Booking Wizard to complete your booking process.
 
 ![Pre-Booking Success screenshot](images/image64.png "Pre-Booking Success")
+
+Please remember that your list will *not* be uploaded to the registry until you complete the booking process using the Booking Wizard.
 
 ## Make Bookings
 
