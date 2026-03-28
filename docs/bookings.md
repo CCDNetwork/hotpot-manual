@@ -54,7 +54,7 @@ The Wizard will ask you to download the file in Excel format, correct any errors
 
 The Excel file will look exactly the same as your original file, except any errors will be highlighted in red. A new column is added to give you additional information about the error.
 
-[INSERT IMAGE]
+![Excel file error screenshot](images/image20.png "Excel error highlighting")
 
 If your uploaded file is in the correct template, your data is correctly formatted, and there are no duplicates, the Wizard will accept the file. You should click on the “Continue” button.
 
