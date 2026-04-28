@@ -21,7 +21,10 @@ On your Profile page, you can edit your First name and Last name, your email, an
 
 ![My Profile screenshot](images/image3.png "My Profile")
 
-In the top right corner of the screen is a button “Wipe deduplication data”. If you press this button, you will see a pop-up box asking if you are sure that you want to delete the data on your organisations account. Do not press this button unless you are 100% certain that you want to delete all the data which you have previously uploaded.
+In the top right corner of the screen is a button “Wipe deduplication data”. If you press this button, you will see a pop-up box asking if you are sure that you want to delete the data on your organisations account.
+
+!!! danger "Irreversible Action"
+    **Do not press the "Wipe deduplication data" button** unless you are 100% certain that you want to delete all the data you have previously uploaded. This action cannot be undone.
 
 ![Wipe data screenshot](images/image36.png "Wipe data warning")
 

@@ -1,6 +1,7 @@
 # Hotpot User Guide v3.0
 
-*This document is accurate as of 2026/02/20. The platform is still under development, and the User Guide will be updated as new features are added.*
+!!! info "Documentation Status"
+    This document is accurate as of 2026/02/20. The platform is still under development, and the User Guide will be updated as new features are added.
 
 # Introduction
 
@@ -14,6 +15,7 @@ The first thing you see when you visit the website is the Login Page. You can lo
 
 Your account will be created by an administrator in your organisation. The administrator will let you know the email address and password that you should use.
 
-If you do not know which email and password to use, contact the administrator for your organisation.
+!!! tip "Need Login Details?"
+    If you do not know which email and password to use, contact the administrator for your organisation.
 
 ![Screenshot](images/image-1.png)

@@ -106,6 +106,9 @@ You need to upload your booking list in a template agreed by the Cash Working Gr
 
 Once your booking list is in the format provided by the template, you can click on the “Booking Wizard” button to start.
 
+!!! warning "Process Completion Required"
+    Please remember that your list will not be uploaded to the registry until you complete the booking process using the Booking Wizard.
+
 ![Booking Wizard button screenshot](images/image22.png "Booking Wizard button")
 
 When you click on the button “Booking Wizard”, the following pop-up box will appear.
@@ -128,7 +131,8 @@ Once you have selected the correct File, press “Continue” to go to the next 
 
 The Wizard will check if your uploaded file uses the correct template, if your data is incorrectly formatted, and if there are duplicates within the file.
 
-If you have not used the correct template or your data is incorrectly formatted, you will see the following error message.
+!!! warning "Strict Formatting Required"
+    If you have not used the correct template or your data is incorrectly formatted, the Wizard will reject the file and ask you to correct the errors highlighted in red.
 
 ![File check error screenshot](images/image49.png "File check error")
 
@@ -146,7 +150,8 @@ If your uploaded file is in the correct template, your data is correctly formatt
 
 When you click on the “Continue” button, the Wizard will check the data in your uploaded file against all the data that is already stored in the platform registry.
 
-Any households which you have uploaded which are <span style="text-decoration:underline;">not</span> already in the registry, will be added to the registry. This is done automatically.
+!!! info "Automatic Registry Addition"
+    Any households which you have uploaded which are **not** already in the registry, will be added to the registry. This is done automatically.
 
 If another organisation has already booked any of your households, the Wizard will inform you and ask you to download a file in Excel format.
 
@@ -158,7 +163,8 @@ This will enable CWG members to identify when there is duplication of registrati
 
 ![Registry duplicate screenshot](images/image33.png "Registry duplicates")
 
-When you receive this information, you should update your organisation’s internal records to reflect changes to your final list.
+!!! important "Update Internal Records"
+    When you are notified of duplicates, ensure you update your organisation’s internal records to reflect these changes to your final booking list.
 
 ## View Bookings
 

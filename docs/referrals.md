@@ -23,7 +23,8 @@ Once you have filled out the fields necessary to make a referral, you can also u
 
 ![Referral form screenshot](images/image7.png "Upload additional information")
 
-Before you can make the referral, you must verify that the beneficiary has given their consent to share their data by clicking the toggle button.
+!!! warning "Beneficiary Consent Required"
+    Before you can finalize the referral, you **must** verify that the beneficiary has given explicit consent to share their data by clicking the consent toggle button.
 
 Once you have completed the form and verified that consent has been given, you will see three buttons which give you different options:
 
@@ -101,7 +102,8 @@ If you click the Trashcan, you will see a pop-up box asking if you are sure.
 
 ![Delete case warning screenshot](images/image21.png "Delete Warning")
 
-You should not click “Confirm” unless you are absolutely certain that you want to delete the Case. Once you delete the Case, it cannot be retrieved!
+!!! danger "Cannot be retrieved"
+    You should not click "Confirm" unless you are absolutely certain. Once you delete the Case, it **cannot be retrieved!**
 
 #### Export a list of Referrals 
 
@@ -165,7 +167,8 @@ The RO assesses the case, perhaps sending their staff to visit the individual’
 1. To register the individual, in which case it will be labelled as **Registered**.
 2. To reject the referral, in which case it will be returned to the SO for follow-up.
 
-**<span style="text-decoration:underline;">`</span>**
+!!! important "Transfer of Responsibility"
+    The Sending Organisation (SO) has responsibility for a Case until the Receiving Organisation (RO) registers the beneficiary. Once the RO registers the beneficiary, it takes formal responsibility for that case, and the SO cannot make any further changes to the referral form.
 
 #### Delivered
 

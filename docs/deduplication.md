@@ -8,7 +8,8 @@ The Deduplication section of the menu on the left gives you three options:
 * [Manage Duplicates](deduplication.md#manage-duplicates). This menu option will take you to a page where you check and confirm potential duplicates.
 * [Manage Templates](deduplication.md#manage-templates). This menu option will take you to a page where you can create a template that will enable you to upload your data.
 
-Before you start to use these options, your organisation will need to establish Rules for checking duplicates. Rules are created by the administrator for your organisation, so if you want to know what rules are being used, ask your administrator. 
+!!! info "Prerequisite: Deduplication Rules"
+    Before you start, your organisation must establish Rules for checking duplicates. If you want to know what rules are being used, ask your administrator.
 
 ## Deduplication
 
@@ -123,7 +124,8 @@ The Adjudication Process happens off-platform, and it usually requires discussio
     1. The potential duplicate is - Not a Duplicate! *Sometimes staff make a mistake in entering data, the platform makes a mistake in flagging a record, or there are simply two individuals who have similar personal information.*
     2. The potential duplicate is a duplicate, but Unclear. If there is not enough information to decide, the record can remain flagged as a potential duplicate in the registry. This option is not preferable, and you should look for more information to make a decision!
 
-*Should the parties involved not arrive at consensus, three members of the Oversight Committee will be invited to mediate discussions within one week.*
+!!! note "Mediation"
+    Should the parties involved not arrive at a consensus during Adjudication, three members of the Oversight Committee will be invited to mediate discussions within one week.
 
 ## Manage Templates
 

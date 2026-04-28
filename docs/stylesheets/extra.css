@@ -1,0 +1,17 @@
+/* Add a subtle border and shadow to all documentation images to separate them from the background */
+.md-typeset img {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: block; /* Ensures margins work properly */
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Optional: remove borders from inline emojis or standard mkdocs icons if they happen to use img tags */
+.md-typeset .twemoji img,
+.md-typeset .emojione img {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
