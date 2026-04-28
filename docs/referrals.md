@@ -37,7 +37,7 @@ On this page you can view the referrals that you have sent to other organisation
 
 ![Manage sent page screenshot](images/image25.png "Manage Sent Page")
 
-*The referrals that you have sent to other organisations are shown in a list. You can Search for a specific referral, or you can filter the referrals by Creator, by Step, by Recipient, by Activity, or by Date. The Actions column in the right show if you have permission to Edit or Delete the Referral.*
+The referrals that you have sent to other organisations are shown in a list. You can Search for a specific referral, or you can filter the referrals by Creator, by Step, by Recipient, by Activity, or by Date. The Actions column in the right show if you have permission to Edit or Delete the Referral.
 
 Above the list of referrals, you can see two Tabs: Sent, and Drafts.
 
@@ -165,7 +165,7 @@ The RO assesses the case, perhaps sending their staff to visit the individual’
 1. To register the individual, in which case it will be labelled as **Registered**.
 2. To reject the referral, in which case it will be returned to the SO for follow-up.
 
-**<span style="text-decoration:underline;">IMPORTANT NOTE: The SO has responsibility for a Case until the RO registers the beneficiary. Once the RO registers the beneficiary, it takes formal responsibility for that case, and the SO cannot make any further changes to the referral form.</span>**
+**<span style="text-decoration:underline;">`</span>**
 
 #### Delivered
 
