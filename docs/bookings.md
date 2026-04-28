@@ -63,12 +63,12 @@ If your uploaded file is in the correct template, your data is correctly formatt
 There are a number of potential errors which your spreadsheet might contain:
 
 * First check that you are using the right template, and that all the headers are correct.
-* Incorrect ID format. Check that your ID numbers have the correct number of digits.
+* Incorrect ID format. Your ID numbers must have the correct number of digits for your location.
 * Invalid modality. Check that you have entered the modality correctly, including checking your spelling.
-* Invalid amount. Check that you have entered the correct amount according to CWG policy.
-* Currency. Check that you have entered the correct currency.
-* Start Date / End Date
-* Rounds
+* Invalid amount. Check that you have entered the correct amount for distribution, according to CWG policy.
+* Invalid Currency. Check that you have entered the correct ISO Currency Code for your response.
+* Start Date / End Date. Your Start and End Dates should be within the range agreed by the CWG.
+* Rounds. The number of rounds you enter should be within the limits agreed by the CWG.
 
 ![Pre-Booking File accepted screenshot](images/image62.png "Pre-Booking File accepted")
 
