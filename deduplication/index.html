@@ -1,0 +1,839 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../bookings/">
+      
+      
+        <link rel="next" href="../referrals/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Deduplication - Hotpot User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Sans:300,300i,400,400i,700,700i%7CUbuntu+Sans+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu Sans";--md-code-font:"Ubuntu Sans Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-manage-deduplication" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Hotpot User Guide" class="md-header__button md-logo" aria-label="Hotpot User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hotpot User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deduplication
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../dashboard/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Dashboard
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bookings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bookings
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Deduplication
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../referrals/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Referrals
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../help/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Help
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Hotpot User Guide" class="md-nav__button md-logo" aria-label="Hotpot User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Hotpot User Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bookings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bookings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deduplication
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deduplication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deduplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deduplication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deduplication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-deduplication-wizard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Deduplication Wizard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Deduplication Wizard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-file-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: File Upload
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-internal-file-deduplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Internal File Deduplication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-registry-deduplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Registry Deduplication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-duplicates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manage Duplicates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manage Duplicates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-adjudication-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Adjudication Process
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manage Templates
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referrals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referrals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="how-to-manage-deduplication">How to manage Deduplication</h1>
+<p>The Deduplication section of the menu on the left gives you three options:</p>
+<p><img alt="Deduplication menu options screenshot" src="../images/image38.png" title="Deduplication menu" /></p>
+<ul>
+<li><a href="./#deduplication">Deduplication</a>. This menu option will take you to a page where you upload your data and check for potential duplicates.</li>
+<li><a href="./#manage-duplicates">Manage Duplicates</a>. This menu option will take you to a page where you check and confirm potential duplicates.</li>
+<li><a href="./#manage-templates">Manage Templates</a>. This menu option will take you to a page where you can create a template that will enable you to upload your data.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Prerequisite: Deduplication Rules</p>
+<p>Before you start, your organisation must establish Rules for checking duplicates. If you want to know what rules are being used, ask your administrator.</p>
+</div>
+<h2 id="deduplication">Deduplication</h2>
+<p>This page displays who uploaded data, the filename, the number of duplicates in those files, and the timestamps for when the deduplication records were created and updated.</p>
+<p><img alt="Deduplication uploads screen screenshot" src="../images/image44.png" title="Deduplication uploads" /></p>
+<p>In the top right corner, you see a blue button which activates the Deduplication Wizard. Click on this button and the Wizard will guide you through the deduplication process.</p>
+<p><img alt="Deduplication wizard button screenshot" src="../images/image41.png" title="Deduplication wizard button" /></p>
+<h3 id="the-deduplication-wizard">The Deduplication Wizard</h3>
+<p>The Deduplication Wizard will take you through three steps. You must complete each step to complete the deduplication process.</p>
+<h4 id="step-1-file-upload">Step 1: File Upload</h4>
+<p>The deduplication wizard can automatically “translate” the fields from your organisation’s dataset into the standardised fields used by the platform.</p>
+<p>In order to do this it uses a <a href="./#manage-templates">Template</a>. Your organisation can set up one or more Templates which will act as the translation layer for your data.</p>
+<p>This enables your organisation to use the platform without you changing any of your internal systems, making it easier to share data with others.</p>
+<p>The Deduplication Wizard starts by asking you to select the relevant Template. Use the dropdown menu to select the Template set up by your organisation.</p>
+<p>If you do not select a Template, the Wizard displays a message stating that a Template is required. You cannot continue until you select a Template.</p>
+<p>If you do not see your Template in the dropdown menu, you can either contact your organisation administrator and ask them to create one, or <a href="./#manage-templates">create a Template yourself</a>.</p>
+<p><img alt="Template selection screenshot" src="../images/image29.png" title="Template selection" /></p>
+<p>Once you have selected a Template, you can choose a file to deduplicate.</p>
+<ol>
+<li>Click <strong>Choose a file</strong> to open your device's upload prompt.</li>
+<li>Select a file from your device or cloud storage. (If you select the wrong file, click <strong>Remove</strong> and select another).</li>
+<li>Click <strong>Continue</strong> to go to the next stage.</li>
+</ol>
+<p><img alt="File selection screenshot" src="../images/image32.png" title="File selection" /></p>
+<h4 id="step-2-internal-file-deduplication">Step 2: Internal File Deduplication</h4>
+<p>Your organisation may already have deduplicated your internal records, but the Wizard will check to see if there are any duplicate records within your uploaded file.</p>
+<p>If there are duplicate records in your uploaded file, the Wizard states how many were found and provides an option to download an Excel file containing the duplicates.</p>
+<ol>
+<li>Click <strong>Download</strong> to save this file to your device. </li>
+<li>Open the file to check and edit the duplicates on your device.</li>
+</ol>
+<p><img alt="Internal duplicate screenshot" src="../images/image54.png" title="Internal duplicates" /></p>
+<ol>
+<li>Return to Step 1 of the Wizard and upload the corrected file.</li>
+</ol>
+<p>Uploading a file with no duplicate records triggers a confirmation message.</p>
+<p><img alt="No internal duplicate screenshot" src="../images/image57.png" title="No internal duplicates" /></p>
+<ol>
+<li>Click <strong>Continue</strong> to proceed to the next step.</li>
+</ol>
+<h4 id="step-3-registry-deduplication">Step 3: Registry Deduplication</h4>
+<p>The Wizard will add your beneficiary data to the shared Registry, and check to see if your uploaded file has any potential duplicate records with the records already held in the Registry.</p>
+<p>If your file did not contain any duplicates, the following screen appears. Click <strong>Finish</strong> to close the Wizard. You do not need to take any further action.</p>
+<p><img alt="Finish wizard screenshot" src="../images/image24.png" title="Finish Wizard" /></p>
+<p>If your file contained duplicates, the following screen appears. Click <strong>Finish</strong> to close the Wizard, and then visit the “<a href="./#manage-duplicates">Manage Duplicates</a>” page to view and manage the potential duplicates.</p>
+<p><img alt="Duplicates found wizard screenshot" src="../images/image8.png" title="Duplicates found in registry" /></p>
+<h2 id="manage-duplicates">Manage Duplicates</h2>
+<p>On this page you can view and manage potential duplicates which you have uploaded. We always refer to “potential” duplicates because we cannot be sure if a record is a duplicate until we have confirmed it with our colleagues in other organisations.</p>
+<p>The Unresolved tab will show you potential duplicates which you need to check. In order to ensure data minimization, the Registry only holds the data fields which the Data Steward has decided are necessary to check for duplicates, e.g. the data defined by specific Rules.</p>
+<p><img alt="Manage duplicates unresolved screenshot" src="../images/image12.png" title="Manage duplicates unresolved list" /></p>
+<p>Click any row to open the Beneficiary Preview, which displays the details of the potential duplicate. The top of the page displays new information:</p>
+<ul>
+<li>The status of the duplicate (either unavailable, accepted, or rejected)</li>
+<li>The organisation which holds the primary record (i.e. the potential duplicate)</li>
+</ul>
+<p><img alt="Beneficiary preview screenshot" src="../images/image31.png" title="Beneficiary Preview" /></p>
+<p>Under the primary record, the platform shows you the organisation which holds that record, the staff member who uploaded that record, when they uploaded it, and which fields are potential duplicates.</p>
+<p>You can use this information to contact your colleague in the other organisation to discuss whether this is a real duplicate, and what action you will take. This is called the <a href="./#the-adjudication-process">Adjudication Process</a>, which needs to be agreed by all participants.</p>
+<p>Once the Adjudication Process is complete, you can change the status of the potential duplicate using the “Actions” drop-down list in the top right corner of the Beneficiary Preview page.</p>
+<p><img alt="Duplicate actions dropdown screenshot" src="../images/image55.png" title="Actions dropdown" /></p>
+<p>If the Adjudication Process is successful, and your reach agreement with your colleague, you can select one of these options.</p>
+<ul>
+<li>Accepted Duplicate. You confirm with your colleague that this is a duplicate record, but both your organisations will continue to work with this beneficiary or household (perhaps because you are delivering different modalities of assistance).</li>
+<li>Rejected Duplicate. You confirm with your colleague that this is <strong>not</strong> a duplicate record, and so your organisation will become the primary record holder in the Registry.</li>
+<li>Delete. You confirm with your colleague that this is a duplicate record, and your organisation will no longer work with this beneficiary or household. You can delete the record from the Registry, although you may decide to keep your internal records.</li>
+</ul>
+<p>If you change the status of the record to “Accepted Duplicate” or “Rejected Duplicate”, the platform will move it from the “Unresolved” tab to the “Resolved” tab. You will be able to view this record when you switch views to that tab.</p>
+<p><img alt="Resolved duplicates tab screenshot" src="../images/image16.png" title="Resolved duplicates tab" /></p>
+<h3 id="the-adjudication-process">The Adjudication Process</h3>
+<p>The Adjudication Process happens off-platform, and it usually requires discussion between partner organisations. The process must be agreed by all members of the Data Steward. This is an example of an Adjudication Process which you can adapt.</p>
+<ol>
+<li>The organisation which uploads an individual record first is considered to be the Primary record holder.</li>
+<li>If another organisation uploads a record which is a potential duplicate of the Primary record, they are a Secondary record holder.</li>
+<li>The Secondary record holder should contact the Primary record holder to discuss the potential duplicate.</li>
+<li>Adjudication is the process of comparing the Primary record to the Secondary record, and deciding jointly if they are duplicates or not.</li>
+<li>There are three possible options at the end of the process:<ol>
+<li>The potential duplicate is - Not a Duplicate! <em>Sometimes staff make a mistake in entering data, the platform makes a mistake in flagging a record, or there are simply two individuals who have similar personal information.</em></li>
+<li>The potential duplicate is a duplicate, but Unclear. If there is not enough information to decide, the record can remain flagged as a potential duplicate in the registry. This option is not preferable, and you should look for more information to make a decision!</li>
+</ol>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Mediation</p>
+<p>Should the parties involved not arrive at a consensus during Adjudication, three members of the Oversight Committee will be invited to mediate discussions within one week.</p>
+</div>
+<h2 id="manage-templates">Manage Templates</h2>
+<p>If you click on “Manage Templates”, the platform will take you to the Templates Page.</p>
+<p><img alt="Manage templates page screenshot" src="../images/image30.png" title="Manage Templates Page" /></p>
+<p>Most deduplication platforms require you to upload your data in a specific format. This means that you have to spend time setting up your internal systems to output that format, or manually updating your spreadsheets to fit that format.</p>
+<p>Templates enable the platform to “translate” your spreadsheet into a common format which enables data sharing. It does this by mapping the header labels from your spreadsheet to the labels in the registry (the shared database).</p>
+<p>Each organisation can set up its own template, and it’s possible to set up multiple templates if you need to upload data from different sources. </p>
+<ol>
+<li>Click <strong>Create Template</strong> in the top right to open the "Create new template" box.</li>
+</ol>
+<p><img alt="Create new template screenshot" src="../images/image28.png" title="Create New Template" /></p>
+<ol>
+<li>Enter a simple descriptive name for your template. </li>
+<li>Check the labels on the left, and enter your organisation’s spreadsheet column <strong>headers</strong> into the corresponding “Column name” boxes on the right. For example:<ul>
+<li>If your spreadsheet uses “Last Name”, type “Last Name” next to “FamilyName”.</li>
+<li>If your spreadsheet uses “Date of Birth”, type “Date of Birth” next to “DateofBirth”.</li>
+</ul>
+</li>
+</ol>
+<p>You only need to enter the Column names which are needed for deduplication. These labels should have been collectively agreed by all the partners. If you are not sure which labels are being used, ask your focal point or a partner colleague.</p>
+<ol>
+<li>Click <strong>Create template</strong> to save. </li>
+</ol>
+<p><img alt="Map template labels screenshot" src="../images/image13.png" title="Map Template Labels" /></p>
+<p>Clicking on the name of any Template in the list will take you to the “Template Edit/Preview” page. On this page you can view the Template details, update the mapping and change the name of the Template if you need to.</p>
+<p><img alt="Template edit page screenshot" src="../images/image2.png" title="Template Edit/Preview" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "navigation.tabs", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
